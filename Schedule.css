@@ -68,13 +68,13 @@ body {
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 20px;
   justify-items: center;
 }
 
 .schedule-grid img {
   width: 100%;
-  max-width: 400px; /* Aumentata la dimensione massima */
+  max-width: 500px; /* Aumentata la dimensione massima */
   height: auto;
   border-radius: 0px;
   /* Rimosso l'effetto hover che aumenta la dimensione */
