@@ -10,8 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 
 h1 {
   font-size: 10rem;
-  color: #ff6b6b;
+  color: #ffffff;
 }
 
 p {
