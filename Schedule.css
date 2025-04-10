@@ -76,7 +76,7 @@ body {
   width: 100%;
   max-width: 300px; /* Aumentata la dimensione massima */
   height: auto;
-  border-radius: 12px;
+  border-radius: 0px;
   /* Rimosso l'effetto hover che aumenta la dimensione */
 }
 
