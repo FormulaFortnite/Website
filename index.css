@@ -33,7 +33,7 @@ a {
   background-color: #ff4242;
   color: white;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 a:hover {
