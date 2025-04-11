@@ -73,7 +73,7 @@ body {
 }
 
 .schedule-grid img {
-  width: 400;
+  width: 100%;
   max-width: 400px; /* Aumentata la dimensione massima */
   height: auto;
   border-radius: 0px;
