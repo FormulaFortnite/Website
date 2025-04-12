@@ -74,7 +74,8 @@ body {
 
 .schedule-grid img {
   width: 100%;
-  max-width: 400px; /* Aumentata la dimensione massima */
+  max-width: 400px;
+  /* Aumentata la dimensione massima */
   height: auto;
   border-radius: 0px;
   /* Rimosso l'effetto hover che aumenta la dimensione */

@@ -1,126 +1,127 @@
 /* RESET BASE */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #2a2a2a;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  /* HEADER */
-  .top-logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .top-logos img {
-    height: 60px;
-  }
-  
-  /* NAVBAR */
-  .nav-table {
-    width: 100%;
-    background-color: red;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-  }
-  
-  .nav-table td {
-    border: 2px solid black;
-    padding: 15px;
-    text-align: center;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .nav-table a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-weight: bold;
-  }
-  
-  .nav-table td:hover {
-    background-color: black;
-    border-color: black;
-  }
-  
-  /* SECTIONS */
-  .schedule-section {
-    background-color: #2a2a2a;
-    padding: 40px 20px;
-    margin: 40px 0;
-  }
-  
-  .schedule-section h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #fff;
-  }
-  
-  /* GRID */
-  .schedule-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    justify-items: center;
-  }
-  
-  .schedule-grid img {
-    width: 100%;
-    max-width: 400px; /* Aumentata la dimensione massima */
-    height: auto;
-    border-radius: 0px;
-    /* Rimosso l'effetto hover che aumenta la dimensione */
-  }
-  
-  /* FOOTER */
-  .footer {
-    background-color: #000;
-    color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 20px 10px;
-    font-size: 14px;
-    margin-top: 50px;
-    border-top: 2px solid #333;
-  }
-  
-  .footer-logo {
-    flex: 0.5;
-    text-align: center;
-  }
-  
-  .footer-logo img {
-    height: 50px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    padding: 0 10px;
-    text-align: center;
-  }
-  
-  .footer-section h3 {
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  
-  .footer-divider {
-    width: 1px;
-    background-color: white;
-    opacity: 0.4;
-    height: 50px;
-    margin: 0 10px;
-    align-self: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a2a2a;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* HEADER */
+.top-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top-logos img {
+  height: 60px;
+}
+
+/* NAVBAR */
+.nav-table {
+  width: 100%;
+  background-color: red;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.nav-table td {
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-table a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.nav-table td:hover {
+  background-color: black;
+  border-color: black;
+}
+
+/* SECTIONS */
+.schedule-section {
+  background-color: #2a2a2a;
+  padding: 40px 20px;
+  margin: 40px 0;
+}
+
+.schedule-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* GRID */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.schedule-grid img {
+  width: 100%;
+  max-width: 400px;
+  /* Aumentata la dimensione massima */
+  height: auto;
+  border-radius: 0px;
+  /* Rimosso l'effetto hover che aumenta la dimensione */
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 50px;
+  border-top: 2px solid #333;
+}
+
+.footer-logo {
+  flex: 0.5;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer-divider {
+  width: 1px;
+  background-color: white;
+  opacity: 0.4;
+  height: 50px;
+  margin: 0 10px;
+  align-self: center;
+}
