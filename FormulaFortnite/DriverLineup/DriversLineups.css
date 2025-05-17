@@ -18,10 +18,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  padding-left: 40px; /* Aggiungi un margine a sinistra */
+  padding-right: 40px; /* Aggiungi un margine a destra */
 }
 
 .top-logos img {
   height: 60px;
+  /* Nessuna modifica necessaria per la dimensione */
 }
 
 /* NAVBAR */
