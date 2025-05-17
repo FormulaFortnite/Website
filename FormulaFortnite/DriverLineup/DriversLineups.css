@@ -16,12 +16,12 @@ body {
 .top-logos {
   display: flex;
   justify-content: space-between;  /* Posiziona i loghi agli estremi */
-  padding: 0 10px; /* Un leggero padding per evitare che tocchino completamente i bordi */
+  padding: 0 20px; /* Aggiungi un padding sui lati per distaccare i loghi dai bordi */
   width: 100%; /* Assicurati che occupino tutta la larghezza della pagina */
 }
 
 .top-logos img {
-  height: 60px;
+  height: 60px;  /* Puoi cambiare l'altezza dei loghi se necessario */
 }
 
 /* NAVBAR */
@@ -78,7 +78,7 @@ body {
 
 .intro-image img {
   width: 100%;
-  max-width: 100%;
+  max-width: 100%;  /* Mantieni le immagini adattabili */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 10px #000;
@@ -164,7 +164,7 @@ body {
 @media (max-width: 768px) {
   /* Loghi in alto - su mobile, rimuovi il padding laterale */
   .top-logos {
-    padding: 0 10px; /* Aggiungi leggero padding per mobile per evitare che tocchino il bordo */
+    padding: 0 15px; /* Modifica questo valore per cambiare il distacco dei loghi dai bordi */
   }
 
   .top-logos img {
