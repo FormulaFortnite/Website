@@ -10,17 +10,14 @@ body {
   background-color: #2a2a2a;
   color: white;
   text-align: center;
-  padding: 0;
-  /* Rimuovi il padding dal body */
 }
 
 /* LOGHI IN ALTO */
 .top-logos {
   display: flex;
-  justify-content: space-between;
-  /* Allinea i loghi ai bordi */
-  padding: 20px 0;
-  /* Aggiungi un po' di padding verticale */
+  justify-content: space-between;  /* Posiziona i loghi agli estremi */
+  padding: 0 10px; /* Un leggero padding per evitare che tocchino completamente i bordi */
+  width: 100%; /* Assicurati che occupino tutta la larghezza della pagina */
 }
 
 .top-logos img {
@@ -30,11 +27,9 @@ body {
 /* NAVBAR */
 .nav-table {
   width: 100%;
-  /* La tabella occupa tutta la larghezza */
   background-color: red;
   border-collapse: collapse;
-  margin-bottom: 0;
-  /* Rimuovi il margine inferiore */
+  margin-bottom: 0; /* Rimuovi il margine inferiore */
 }
 
 .nav-table td {
@@ -62,8 +57,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
-  /* Rimuovi il padding laterale per attaccare agli estremi */
+  padding: 20px 10px; /* Padding laterale per i contenuti */
   margin-top: 30px;
   flex-wrap: wrap;
 }
@@ -101,9 +95,7 @@ body {
 
 .invite-image img {
   width: 100%;
-  /* Usa tutta la larghezza disponibile */
-  max-width: 400px;
-  /* Limita la larghezza massima */
+  max-width: 400px; /* Limita la larghezza massima */
   border-radius: 10px;
   box-shadow: 0 0 10px black;
   transition: transform 0.2s;
@@ -170,19 +162,37 @@ body {
 
 /* Media Query per schermi piccoli */
 @media (max-width: 768px) {
-
-  /* Rimuovi padding laterali e aggiungi margini per gestire gli spazi su mobile */
-  .intro-section {
-    padding: 0 10px;
-    /* Un po' di padding laterale */
+  /* Loghi in alto - su mobile, rimuovi il padding laterale */
+  .top-logos {
+    padding: 0 10px; /* Aggiungi leggero padding per mobile per evitare che tocchino il bordo */
   }
 
-  /* Rendi la tabella di navigazione più piccola */
+  .top-logos img {
+    height: 50px; /* Riduci la dimensione dei loghi su mobile */
+  }
+
+  /* Adatta la larghezza delle immagini nelle sezioni */
+  .intro-image img {
+    max-width: 100%; /* Le immagini non superano mai il 100% della larghezza */
+  }
+
+  /* Sezione della navbar */
   .nav-table {
-    font-size: 14px;
+    font-size: 14px; /* Font più piccolo per la navbar */
   }
 
   .nav-table td {
-    padding: 10px;
+    padding: 10px; /* Ridurre la dimensione dei link sulla navbar */
+  }
+
+  /* Sezioni nel footer */
+  .footer {
+    flex-wrap: wrap;
+    padding: 15px 5px;
+  }
+
+  .footer-section {
+    flex: 1;
+    padding: 0 5px;
   }
 }
