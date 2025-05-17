@@ -17,12 +17,23 @@ body {
 .top-logos {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;  /* Cambiato da space-between a center */
+  position: relative; /* Aggiunto per gestire il posizionamento assoluto delle immagini */
   padding: 20px;
 }
 
 .top-logos img {
   height: 60px;
+}
+
+.top-logos .left {
+  position: absolute;
+  left: -10px;  /* Fuori dal bordo a sinistra */
+}
+
+.top-logos .right {
+  position: absolute;
+  right: -10px; /* Fuori dal bordo a destra */
 }
 
 /* NAVBAR */
