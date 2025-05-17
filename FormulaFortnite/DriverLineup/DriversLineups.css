@@ -131,19 +131,31 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
-/* Contenitore delle immagini: max 1000px, centrato */
+/* Contenitore centrato per le griglie lineup */
 .lineup-grid {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Responsive su mobile: contenitore più stretto */
+/* SU DESKTOP: restringe le immagini per evitare che siano troppo larghe */
+@media (min-width: 1024px) {
+  .lineup-grid img {
+    width: 70%;
+  }
+}
+
+/* SU MOBILE: immagini larghe quanto il contenitore */
 @media (max-width: 600px) {
   .lineup-grid {
     max-width: 95%;
     padding: 0 10px;
+  }
+
+  .lineup-grid img {
+    width: 100%;
   }
 }
