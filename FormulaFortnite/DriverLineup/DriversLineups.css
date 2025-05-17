@@ -95,18 +95,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto;
   padding: 20px 0;
 }
 
 .lineup-grid img {
-  max-width: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 80vh;
   display: block;
+  margin: 0 auto;
   border-radius: 8px;
   object-fit: contain;
+}
+
+/* MEDIA QUERY per MOBILE */
+@media (max-width: 768px) {
+  .lineup-grid img {
+    max-width: 90%;   /* Su mobile, l'immagine occuperà al massimo il 90% della larghezza */
+    max-height: 60vh; /* L'immagine non supererà il 60% dell'altezza dello schermo */
+  }
+}
+
+/* MEDIA QUERY per DESKTOP */
+@media (min-width: 769px) {
+  .lineup-grid img {
+    max-width: 95%;   /* Immagine più grande su desktop (95% della larghezza) */
+    max-height: 80vh; /* L'altezza dell'immagine non supererà l'80% della finestra */
+  }
 }
 
 /* FOOTER */
