@@ -126,14 +126,24 @@ body {
   align-self: center;
 }
 
+/* Rende tutte le immagini responsive */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+/* Contenitore delle immagini: max 1000px, centrato */
 .lineup-grid {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* Responsive su mobile: contenitore più stretto */
+@media (max-width: 600px) {
+  .lineup-grid {
+    max-width: 95%;
+    padding: 0 10px;
+  }
 }
