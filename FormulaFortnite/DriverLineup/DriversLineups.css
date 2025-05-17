@@ -10,6 +10,7 @@ body {
   color: white;
   font-family: sans-serif;
   text-align: center;
+  overflow-x: hidden; /* Prevenire l'overflow orizzontale */
 }
 
 /* HEADER */
@@ -18,13 +19,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  padding-left: 40px; /* Aggiungi un margine a sinistra */
-  padding-right: 40px; /* Aggiungi un margine a destra */
 }
 
 .top-logos img {
   height: 60px;
-  /* Nessuna modifica necessaria per la dimensione */
 }
 
 /* NAVBAR */
@@ -62,9 +60,9 @@ body {
 }
 
 .schedule-section h2 {
-  font-size: 24px;
+  font-size: 50px;
   margin-bottom: 30px;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* GRID */
@@ -77,11 +75,8 @@ body {
 
 .schedule-grid img {
   width: 100%;
-  max-width: 400px;
-  /* Aumentata la dimensione massima */
+  max-width: 100%; /* Aggiungi la larghezza massima */
   height: auto;
-  border-radius: 0px;
-  /* Rimosso l'effetto hover che aumenta la dimensione */
 }
 
 /* FOOTER */
@@ -129,36 +124,13 @@ body {
   align-self: center;
 }
 
-/* Rende tutte le immagini responsive */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Contenitore centrato per le griglie lineup */
-.lineup-grid {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* SU DESKTOP: restringe le immagini per evitare che siano troppo larghe */
-@media (min-width: 1024px) {
-  .lineup-grid img {
-    width: 80%;
-  }
-}
-
-/* SU MOBILE: immagini larghe quanto il contenitore */
-@media (max-width: 600px) {
-  .lineup-grid {
-    max-width: 80%;
-    padding: 0 10px;
-  }
-
-  .lineup-grid img {
+/* Media Query per schermi piccoli */
+@media (max-width: 768px) {
+  .nav-table {
     width: 100%;
+    font-size: 14px;
+  }
+  .nav-table td {
+    padding: 10px;
   }
 }
