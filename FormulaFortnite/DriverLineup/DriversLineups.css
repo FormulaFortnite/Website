@@ -17,12 +17,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;  /* Modifica questo valore per cambiare il distacco dai bordi */
-  width: 100%; /* Assicurati che occupino tutta la larghezza della pagina */
+  padding: 0 20px; /* Distaccamento dal bordo modificabile */
+  width: 100%;
 }
 
 .top-logos img {
-  height: 60px; /* Puoi cambiare questa altezza se necessario */
+  height: 60px;
+  object-fit: contain;
 }
 
 /* NAVBAR */
@@ -30,7 +31,7 @@ body {
   width: 100%;
   background-color: red;
   border-collapse: collapse;
-  margin-bottom: 0; /* Rimuovi margini inutili */
+  margin-bottom: 0;
 }
 
 .nav-table td {
@@ -72,8 +73,8 @@ body {
 }
 
 .lineup-grid img {
-  width: 100%;
-  max-width: 100%; /* Limita la larghezza dell'immagine al 100% */
+  width: 100%;   /* Le immagini si adattano al 100% della larghezza del loro contenitore */
+  max-width: 80%;  /* Limita la larghezza massima al 80% per evitare che diventino troppo grandi */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 10px #000;
@@ -121,20 +122,11 @@ body {
 @media (max-width: 768px) {
   /* Loghi in alto - su mobile, rimuovi il padding laterale */
   .top-logos {
-    padding: 0 15px; /* Cambia questo valore per il distacco su mobile */
+    padding: 0 10px; /* Modifica il distacco per schermi più piccoli */
   }
 
   .top-logos img {
     height: 50px; /* Riduci la dimensione dei loghi su mobile */
-  }
-
-  /* Sezione della navbar */
-  .nav-table {
-    font-size: 14px; /* Font più piccolo per la navbar su dispositivi mobili */
-  }
-
-  .nav-table td {
-    padding: 10px; /* Ridurre la dimensione dei link nella navbar */
   }
 
   /* Adatta la larghezza delle immagini nelle sezioni */
