@@ -151,7 +151,7 @@ img {
 /* SU MOBILE: immagini larghe quanto il contenitore */
 @media (max-width: 600px) {
   .lineup-grid {
-    max-width: 95%;
+    max-width: 90%;
     padding: 0 10px;
   }
 
