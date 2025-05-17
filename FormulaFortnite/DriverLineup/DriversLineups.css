@@ -144,14 +144,14 @@ img {
 /* SU DESKTOP: restringe le immagini per evitare che siano troppo larghe */
 @media (min-width: 1024px) {
   .lineup-grid img {
-    width: 70%;
+    width: 80%;
   }
 }
 
 /* SU MOBILE: immagini larghe quanto il contenitore */
 @media (max-width: 600px) {
   .lineup-grid {
-    max-width: 90%;
+    max-width: 80%;
     padding: 0 10px;
   }
 
