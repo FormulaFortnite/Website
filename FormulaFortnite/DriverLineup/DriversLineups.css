@@ -17,8 +17,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Occupa tutta la larghezza disponibile */
-  padding: 0 20px; /* Aggiungi un piccolo margine ai lati, se desideri un po' di spazio */
+  width: 100%; /* Occupiamo tutta la larghezza disponibile */
+  padding: 0; /* Rimuoviamo qualsiasi padding laterale che può distanziare i loghi */
+}
+
+/* Se desideri aggiungere un piccolo distacco su mobile, puoi farlo così: */
+@media (max-width: 600px) {
+  .top-logos {
+    padding: 0 20px; /* Solo su mobile per un po' di spazio */
+  }
 }
 
 .top-logos img {
