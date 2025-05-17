@@ -10,6 +10,7 @@ body {
   color: white;
   font-family: sans-serif;
   text-align: center;
+  overflow-x: hidden; /* Prevenire l'overflow orizzontale */
 }
 
 /* HEADER */
@@ -74,11 +75,8 @@ body {
 
 .schedule-grid img {
   width: 100%;
-  max-width: 400px;
-  /* Aumentata la dimensione massima */
+  max-width: 100%; /* Aggiungi la larghezza massima */
   height: auto;
-  border-radius: 0px;
-  /* Rimosso l'effetto hover che aumenta la dimensione */
 }
 
 /* FOOTER */
@@ -124,4 +122,15 @@ body {
   height: 50px;
   margin: 0 10px;
   align-self: center;
+}
+
+/* Media Query per schermi piccoli */
+@media (max-width: 768px) {
+  .nav-table {
+    width: 100%;
+    font-size: 14px;
+  }
+  .nav-table td {
+    padding: 10px;
+  }
 }
