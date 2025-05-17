@@ -119,7 +119,7 @@ body {
 @media (min-width: 769px) {
   .lineup-grid img {
     max-width: 90%;   /* Immagine più grande su desktop (95% della larghezza) */
-    max-height: 100vh; /* L'altezza dell'immagine non supererà l'80% della finestra */
+    max-height: 100vh; /* L'altezza dell'immagine non supererà l'100% della finestra */
   }
 }
 
