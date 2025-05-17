@@ -18,19 +18,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 0;
+  padding: 20px;
 }
 
 .top-logos img {
   height: 60px;
-}
-
-/* Mobile padding per header */
-@media (max-width: 600px) {
-  .top-logos {
-    padding: 0 20px;
-  }
 }
 
 /* NAVBAR */
@@ -60,16 +52,6 @@ body {
   border-color: black;
 }
 
-/* Media Query per NAV su schermi piccoli */
-@media (max-width: 768px) {
-  .nav-table {
-    font-size: 14px;
-  }
-  .nav-table td {
-    padding: 10px;
-  }
-}
-
 /* SECTIONS */
 .schedule-section {
   background-color: #2a2a2a;
@@ -93,16 +75,8 @@ body {
 
 .schedule-grid img {
   width: 100%;
-  max-width: 100%;
+  max-width: 100%; /* Aggiungi la larghezza massima */
   height: auto;
-}
-
-/* Rende tutte le immagini responsive */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 /* FOOTER */
@@ -150,28 +124,13 @@ img {
   align-self: center;
 }
 
-/* Lineup Grid Contenitore */
-.lineup-grid {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Desktop: immagini più strette */
-@media (min-width: 1024px) {
-  .lineup-grid img {
-    width: 80%;
-  }
-}
-
-/* Mobile: layout più stretto */
-@media (max-width: 600px) {
-  .lineup-grid {
-    max-width: 80%;
-    padding: 0 10px;
-  }
-
-  .lineup-grid img {
+/* Media Query per schermi piccoli */
+@media (max-width: 768px) {
+  .nav-table {
     width: 100%;
+    font-size: 14px;
+  }
+  .nav-table td {
+    padding: 10px;
   }
 }
