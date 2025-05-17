@@ -6,33 +6,35 @@
 }
 
 body {
+  font-family: sans-serif;
   background-color: #2a2a2a;
   color: white;
-  font-family: sans-serif;
   text-align: center;
+  padding: 0;
+  /* Rimuovi il padding dal body */
 }
 
-/* HEADER */
+/* LOGHI IN ALTO */
 .top-logos {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  padding-left: 40px; /* Aggiungi un margine a sinistra */
-  padding-right: 40px; /* Aggiungi un margine a destra */
+  /* Allinea i loghi ai bordi */
+  padding: 20px 0;
+  /* Aggiungi un po' di padding verticale */
 }
 
 .top-logos img {
   height: 60px;
-  /* Nessuna modifica necessaria per la dimensione */
 }
 
 /* NAVBAR */
 .nav-table {
   width: 100%;
+  /* La tabella occupa tutta la larghezza */
   background-color: red;
   border-collapse: collapse;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+  /* Rimuovi il margine inferiore */
 }
 
 .nav-table td {
@@ -54,34 +56,67 @@ body {
   border-color: black;
 }
 
-/* SECTIONS */
-.schedule-section {
-  background-color: #2a2a2a;
-  padding: 40px 20px;
-  margin: 40px 0;
-}
-
-.schedule-section h2 {
-  font-size: 24px;
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-/* GRID */
-.schedule-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  justify-items: center;
-}
-
-.schedule-grid img {
+/* SEZIONI */
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  max-width: 400px;
-  /* Aumentata la dimensione massima */
+  padding: 20px 0;
+  /* Rimuovi il padding laterale per attaccare agli estremi */
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  min-width: 300px;
+}
+
+.intro-image {
+  flex: 2;
+  width: 100%;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 0px;
-  /* Rimosso l'effetto hover che aumenta la dimensione */
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* INVITE IMAGE */
+.invite-image {
+  display: inline-block;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.invite-image img {
+  width: 100%;
+  /* Usa tutta la larghezza disponibile */
+  max-width: 400px;
+  /* Limita la larghezza massima */
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  transition: transform 0.2s;
+}
+
+.invite-image img:hover {
+  transform: scale(1.05);
+}
+
+.invite-image p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* FOOTER */
@@ -98,6 +133,7 @@ body {
   border-top: 2px solid #333;
 }
 
+/* LOGO NEL FOOTER */
 .footer-logo {
   flex: 0.5;
   text-align: center;
@@ -107,12 +143,14 @@ body {
   height: 50px;
 }
 
+/* SEZIONI NEL FOOTER */
 .footer-section {
   flex: 1;
   padding: 0 10px;
   text-align: center;
 }
 
+/* TITOLI SEZIONI IN GRASSETTO BIANCO */
 .footer-section h3 {
   color: white;
   font-weight: bold;
@@ -120,6 +158,7 @@ body {
   margin-bottom: 8px;
 }
 
+/* LINEE DIVISORIE */
 .footer-divider {
   width: 1px;
   background-color: white;
@@ -129,36 +168,21 @@ body {
   align-self: center;
 }
 
-/* Rende tutte le immagini responsive */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+/* Media Query per schermi piccoli */
+@media (max-width: 768px) {
 
-/* Contenitore centrato per le griglie lineup */
-.lineup-grid {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* SU DESKTOP: restringe le immagini per evitare che siano troppo larghe */
-@media (min-width: 1024px) {
-  .lineup-grid img {
-    width: 80%;
-  }
-}
-
-/* SU MOBILE: immagini larghe quanto il contenitore */
-@media (max-width: 600px) {
-  .lineup-grid {
-    max-width: 80%;
+  /* Rimuovi padding laterali e aggiungi margini per gestire gli spazi su mobile */
+  .intro-section {
     padding: 0 10px;
+    /* Un po' di padding laterale */
   }
 
-  .lineup-grid img {
-    width: 100%;
+  /* Rendi la tabella di navigazione più piccola */
+  .nav-table {
+    font-size: 14px;
+  }
+
+  .nav-table td {
+    padding: 10px;
   }
 }
