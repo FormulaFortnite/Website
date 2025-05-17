@@ -75,10 +75,35 @@ body {
 .schedule-grid img {
   width: 100%;
   max-width: 400px;
-  /* Aumentata la dimensione massima */
   height: auto;
   border-radius: 0px;
-  /* Rimosso l'effetto hover che aumenta la dimensione */
+}
+
+/* LINEUP SECTION */
+.lineup-section {
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.lineup-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.lineup-grid {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.lineup-grid img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 /* FOOTER */
