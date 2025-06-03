@@ -16,6 +16,10 @@ h1.Welcome {
   color: red;
 }
 
+h3.Server {
+  color: red;
+}
+
 /* LOGHI IN ALTO */
 .top-logos {
   display: flex;
