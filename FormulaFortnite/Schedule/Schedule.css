@@ -12,6 +12,14 @@ body {
   text-align: center;
 }
 
+h1.Schedule {
+  color: red;
+}
+
+h2.Schedule {
+  color: red;
+}
+
 /* HEADER */
 .top-logos {
   display: flex;
