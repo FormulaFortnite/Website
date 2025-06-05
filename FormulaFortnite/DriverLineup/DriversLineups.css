@@ -85,7 +85,7 @@ h1.Lineup {
 
 /* LINEUP SECTION */
 .lineup-section {
-  margin-top: 0;       /* <-- qui: rimuoviamo margine superiore */
+  margin-top: 20px       /* <-- qui: rimuoviamo margine superiore */
   margin-bottom: 80px;
   padding: 0 20px;
 }
