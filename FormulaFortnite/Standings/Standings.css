@@ -64,21 +64,32 @@ body {
     color: #fff;
 }
 
-/* GRID */
-.schedule-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    justify-items: center;
+/* STANDINGS PAIR */
+.standings-pair {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-.schedule-grid img {
-    width: 100%;
+.standings-item {
+    text-align: center;
     max-width: 400px;
-    /* Aumentata la dimensione massima */
+    width: 100%;
+}
+
+.standings-item img {
+    width: 100%;
     height: auto;
     border-radius: 0px;
-    /* Rimosso l'effetto hover che aumenta la dimensione */
+}
+
+.standings-item .label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFD700; /* oro */
+    font-size: 18px;
 }
 
 /* FOOTER */
