@@ -107,7 +107,7 @@ h1.Lineup {
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 8px;
+  border-radius: 0px;
   object-fit: contain;
 }
 
