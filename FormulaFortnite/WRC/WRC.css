@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+h1 {
+  color: #cc5500;
+}
+
 /* LOGHI IN ALTO */
 .top-logos {
   display: flex;

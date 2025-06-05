@@ -13,6 +13,10 @@ body {
   overflow-x: hidden; /* Prevenire l'overflow orizzontale */
 }
 
+h1 {
+  color: red;
+}
+
 /* HEADER */
 .top-logos {
   display: flex;
