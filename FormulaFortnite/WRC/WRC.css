@@ -77,21 +77,24 @@ body {
 .section-image img {
   max-width: 500px;
   margin-top: 20px;
+  height: auto;
 }
 
-.section-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  padding-top: 20px;
-}
-
-.section-grid img {
+/* IMMAGINI IN SECTION-GRID */
+/* Per tutte le immagini in section-grid tranne quelle in standings */
+.section-grid:not(.standings) img {
   width: 100%;
   max-width: 250px; /* Immagini più grandi ma non troppo */
   height: auto;
   border: none; /* Rimosso bordo delle immagini */
+}
+
+/* Per le immagini nella sezione standings, mantieni dimensione originale */
+.section-grid.standings img {
+  width: auto;
+  max-width: none;
+  height: auto;
+  border: none;
 }
 
 /* SCHEDULING E RESULTS IN UNA RIGA */
