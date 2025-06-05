@@ -33,7 +33,7 @@ h1.Lineup {
   width: 100%;
   background-color: red;
   border-collapse: collapse;
-  margin-bottom: 60px; /* distanza verso il primo testo */
+  margin-bottom: 40px; /* distanza verso il primo testo */
 }
 
 .nav-table td {
@@ -86,7 +86,7 @@ h1.Lineup {
 /* LINEUP SECTION */
 .lineup-section {
   margin-top: 0;       /* <-- qui: rimuoviamo margine superiore */
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   padding: 0 20px;
 }
 
