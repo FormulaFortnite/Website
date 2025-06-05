@@ -68,7 +68,7 @@ body {
 .standings-pair {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 200px;
     margin-bottom: 40px;
     flex-wrap: wrap;
 }
