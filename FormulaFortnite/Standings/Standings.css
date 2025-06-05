@@ -12,6 +12,10 @@ body {
     text-align: center;
 }
 
+h2 {
+    color: red;
+}
+
 /* HEADER */
 .top-logos {
     display: flex;
