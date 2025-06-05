@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  color: #cc5500;
+  color: #ffa733;
 }
 
 /* LOGHI IN ALTO */
@@ -31,7 +31,7 @@ h1 {
 /* NAVBAR */
 .nav-table {
   width: 100%;
-  background-color: #cc5500; /* darker orange */
+  background-color: #ffa733; /* darker orange */
   border-collapse: collapse;
   margin-bottom: 40px;
 }
